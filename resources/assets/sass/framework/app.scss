@@ -1,0 +1,73 @@
+@import 'reset';
+
+body {
+	background: #fff;
+	font-family: arial;
+	font-size: 0.8em;
+}
+
+.container {
+	max-width: 1000px;
+	height: 600px;
+	margin: auto;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.card {
+	background: white;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,.09);
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0,0,0,.04);
+	.image {
+		box-sizing: border-box;
+		height: 150px;
+		background-size: cover center;
+	}
+}
+
+.footer {
+	padding: 5px;
+	background: white;
+	display: flex;
+
+	.owner {
+		display: flex;
+		flex: 1;
+		align-items: center;
+
+		.logo {
+			flex: 0;
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		.content {
+			flex: auto;
+			padding-left: 5px;
+		}
+	}
+
+	.actions {
+		border: 1px solid orange;
+		flex: 1;
+		display: flex;
+		align-items: center;
+
+		.like {
+			flex: 1;
+			text-align: center;
+		}
+
+		.comment {
+			flex: 1;
+			text-align: center;
+		}
+	}
+}
